@@ -108,6 +108,11 @@ if (mainText) {
 
 data.sections.forEach(section => {
     const scrollSection = document.querySelector(`#${section.id}`);
+        // To make the element visible
+    scrollSection.style.visibility = 'visible';
+
+    // If the element uses 'display: none', use this instead:
+    scrollSection.style.display = 'block';
     const scrollContent = scrollSection.querySelector(".toggable-section-content");
 
     const fixedPart = scrollSection.querySelector(".header");

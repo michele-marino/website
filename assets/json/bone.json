@@ -47,31 +47,6 @@
             "contentFunction": "createBabylonScene"
           }
         ]
-      },
-      {
-        "id": "section-2",
-        "title": "Atheroscleorosis",
-        "subtitle": "Fixed Subtitle 2",
-        "contents": [
-          {
-            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "image": "assets/imgs/formula.png",
-            "isImage": true
-          },
-          {
-            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "image": "assets/imgs/empty.png",
-            "isImage": false,
-            "canvasType": "chart",
-            "contentFunction": "createChart"
-          },
-          {
-            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "isImage": false,
-            "canvasType": "babylon",
-            "contentFunction": "createBabylonScene2"
-          }
-        ]
       }
     ]
   }
