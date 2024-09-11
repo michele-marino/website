@@ -1,10 +1,9 @@
 name: Deploy GitHub Pages
 
-# Esegui il workflow su ogni push al branch main
 on:
   push:
     branches:
-      - main  # Modifica se usi un altro branch
+      - main  # Usa il branch main per il deploy
 
 jobs:
   deploy:
@@ -14,9 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # Step per il deploy su GitHub Pages
+    # Non è necessario alcun processo di build se hai solo file HTML
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # La directory con i file HTML (se stai usando una cartella specifica, cambia questo percorso)
+        publish_branch: main  # Usa il branch main
+        publish_dir: ./  # La directory con i file del sito (ad esempio './', o './docs')
