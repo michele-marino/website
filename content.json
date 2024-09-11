@@ -1,0 +1,71 @@
+{
+  "sections": [
+    {
+      "id": "scroll-section-1",
+      "title": "Fixed Title 1",
+      "subtitle": "Fixed Subtitle 1",
+      "contents": [
+        {
+          "text": "Content 1 Text",
+          "image": "assets/imgs/empty.png",
+          "isImage": true
+        },
+        {
+          "text": "Content 2 Text",
+          "image": "assets/imgs/empty.png",
+          "isImage": true
+        },
+        {
+          "text": "Content 3 Text",
+          "isImage": false,
+          "contentFunction": "createBabylonScene"
+        }
+      ]
+    },
+    {
+      "id": "scroll-section-2",
+      "title": "Fixed Title 2",
+      "subtitle": "Fixed Subtitle 2",
+      "contents": [
+        {
+          "text": "Content A Text",
+          "image": "assets/imgs/empty.png",
+          "isImage": true
+        },
+        {
+          "text": "Content B Text",
+          "image": "assets/imgs/empty.png",
+          "isImage": false,
+          "contentFunction" : "createChart"
+        },
+        {
+          "text": "Content C Text",
+          "isImage": false,
+          "contentFunction": "createBabylonScene2"
+        }
+      ]
+    },
+    {
+      "id": "scroll-section-3",
+      "title": "Fixed Title 3",
+      "subtitle": "Fixed Subtitle 3",
+      "contents": [
+        {
+          "text": "Content X Text",
+          "image": "path/to/imageX.png",
+          "isImage": true
+        },
+        {
+          "text": "Content Y Text",
+          "image": "path/to/imageY.png",
+          "isImage": true
+        },
+        {
+          "text": "Content Z Text",
+          "isImage": false,
+          "contentFunction": "createChart"
+        }
+      ]
+    }
+  ]
+}

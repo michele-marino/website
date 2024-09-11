@@ -1,0 +1,103 @@
+{
+  "scriptFiles": [
+    { "scriptFile": "scripts/chart.js" },
+    { "scriptFile": "scripts/babylon-setup.js" }
+  ],
+  "mainSection": {
+    "svgImage": {
+      "link": "https://raw.githubusercontent.com/mastroalex/m2m/main/assets/imgs/drawing.svg"
+    },
+    "Journal1": {
+      "link": "https://link.springer.com/article/10.1007/s10237-024-01826-6",
+      "front": "assets/imgs/journal1.png",
+      "back": "https://media.springernature.com/w316/springer-static/cover-hires/journal/10237?as=webp"
+    },
+    "Journal2": {
+      "link": "https://royalsocietypublishing.org/doi/10.1098/rsif.2017.0615",
+      "front": "assets/imgs/journal2.png",
+      "back": "https://royalsocietypublishing.org/cms/asset/ad231d7a-0abc-499e-b110-818c6bc3d1c9/rsif.14.issue-136.cover.gif"
+    },
+    "Journal3": {
+      "link": "https://link.springer.com/article/10.1007/s10439-024-03458-4",
+      "front": "assets/imgs/journal3.png",
+      "back": "https://media.springernature.com/w316/springer-static/cover-hires/journal/10439?as=webp"
+    },
+    "Text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+  },
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "Tissue damage",
+      "subtitle": "Modeling of the inflamatory response",
+      "contents": [
+        {
+          "text": "In silico models that integrates nonlinear mechanics, molecular pathways, and cellular behavior to describe the inflammatory response and healing process of arterial tissues following collagen damage",
+          "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0010482523002767-gr1.jpg",
+          "isImage": true
+        },
+        {
+          "text": "Several chemo-mechano-biological mechanisms are modeled and combined to simulate the entire healing cascade",
+          "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0010482523002767-gr2_lrg.jpg",
+          "isImage": true
+        },
+        {
+          "text": "Complex loading scenarios and inhomogeneous damage distributions, highlighting its utility for in silico clinical trials and precision medicin",
+          "isImage": false,
+          "canvasType": "babylon",
+          "contentFunction": "createBabylonScene"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "Atheroscleorosis",
+      "subtitle": "Fixed Subtitle 2",
+      "contents": [
+        {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "image": "assets/imgs/formula.png",
+          "isImage": true
+        },
+        {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "image": "assets/imgs/empty.png",
+          "isImage": false,
+          "canvasType": "chart",
+          "contentFunction": "createChart"
+        },
+        {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "isImage": false,
+          "canvasType": "babylon",
+          "contentFunction": "createBabylonScene2"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "Vascular tone regulation",
+      "subtitle": " Chemo-mechano-biological pathways",
+      "contents": [
+        {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs10237-024-01826-6/MediaObjects/10237_2024_1826_Fig2_HTML.png?as=webp",
+          "isImage": false,
+          "canvasType": "babylon",
+          "contentFunction": "createBabylonScene3"
+        },
+        {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "image": "path/to/imageY.png",
+          "isImage": false,
+          "canvasType": "chart",
+          "contentFunction": "createChart2"
+        },
+        {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          "isImage": true,
+          "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs10237-024-01826-6/MediaObjects/10237_2024_1826_Fig2_HTML.png?as=webp"
+        }
+      ]
+    }
+  ]
+}

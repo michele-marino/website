@@ -1,0 +1,13 @@
+#main-section-svg svg {
+    width: 100%;
+    height: auto;
+}
+
+#main-section-svg svg .some-class {
+    fill: red;
+    transition: fill 0.3s ease-in-out;
+}
+
+#main-section-svg svg .some-class:hover {
+    fill: blue;
+}
