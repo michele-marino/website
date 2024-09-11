@@ -105,59 +105,97 @@ const mainText = document.querySelector(".main-text");
 if (mainText) {
     mainText.textContent = data.mainSection.Text;
 }
-
+// Select the main wrapper where the sections will be added
+const pageWrapper = document.querySelector('.page-wrapper');
 data.sections.forEach(section => {
-    const scrollSection = document.querySelector(`#${section.id}`);
-        // To make the element visible
-    scrollSection.style.visibility = 'visible';
+    // Create section element
+    const sectionDiv = document.createElement('div');
+    sectionDiv.id = section.id;  // Assign ID to section
+    sectionDiv.classList.add('section');
+    
+    // Create toggable section
+    const toggableSectionDiv = document.createElement('div');
+    toggableSectionDiv.classList.add('toggable-section');
 
-    // If the element uses 'display: none', use this instead:
-    scrollSection.style.display = 'block';
-    const scrollContent = scrollSection.querySelector(".toggable-section-content");
+    // Create header (fixed part)
+    const headerDiv = document.createElement('div');
+    headerDiv.classList.add('header');
+    
+    const headerContent = `
+        <div>
+            <div class="title">${section.title}</div>
+            <div class="subtitle">${section.subtitle}</div>
+        </div>
+        <div class="toggle-icon">&#x25BC;</div>
+    `;
+    headerDiv.innerHTML = headerContent;
 
-    const fixedPart = scrollSection.querySelector(".header");
-    if (!fixedPart) {
-        console.error(`Header not found in section with ID ${section.id}.`);
-        return;
-    }
+    toggableSectionDiv.appendChild(headerDiv);  // Add header to toggable section
 
-    fixedPart.querySelector(".title").textContent = section.title;
-    fixedPart.querySelector(".subtitle").textContent = section.subtitle;
+    // Create the content container (scrolling part)
+    const toggableSectionContent = document.createElement('div');
+    toggableSectionContent.classList.add('toggable-section-content');
 
+    // For each content item in the section, create a scrolling part
     section.contents.forEach((content, index) => {
-        const scrollingPart = scrollContent.children[index];
-        scrollingPart.querySelector(".left-content .text").textContent = content.text;
+        const scrollingPart = document.createElement('div');
+        scrollingPart.classList.add('scrolling-part');
 
+        // Create left content (text)
+        const leftContentDiv = document.createElement('div');
+        leftContentDiv.classList.add('left-content');
+        leftContentDiv.innerHTML = `<div class="text">${content.text}</div>`;
+
+        // Create right content (media)
+        const rightContentDiv = document.createElement('div');
+        rightContentDiv.classList.add('right-content');
+        const mediaDiv = document.createElement('div');
+        mediaDiv.classList.add('media');
+        
+        // Handle media based on content type
         if (content.isImage) {
-            const imageElement = document.createElement("img");
+            const imageElement = document.createElement('img');
             imageElement.src = content.image;
-            scrollingPart.querySelector(".right-content .media").appendChild(imageElement);
-        } else if (content.canvasType === "chart") {
-            const canvasElement = document.createElement("div");
-            canvasElement.classList.add("chartjs-canvas");
-            scrollingPart.querySelector(".right-content .media").appendChild(canvasElement);
-
-            if (content.contentFunction && typeof window[content.contentFunction] === "function") {
-                window[content.contentFunction](canvasElement);
+            mediaDiv.appendChild(imageElement);
+        } else if (content.canvasType === 'chart') {
+            const chartDiv = document.createElement('div');
+            chartDiv.classList.add('chartjs-canvas');
+            mediaDiv.appendChild(chartDiv);
+            if (content.contentFunction && typeof window[content.contentFunction] === 'function') {
+                window[content.contentFunction](chartDiv);
             }
-        } else if (content.canvasType === "babylon") {
-            const canvasElement = document.createElement("div");
-            canvasElement.classList.add("babylon-canvas");
-            scrollingPart.querySelector(".right-content .media").appendChild(canvasElement);
-
-            if (content.contentFunction && typeof window[content.contentFunction] === "function") {
-                window[content.contentFunction](canvasElement);
+        } else if (content.canvasType === 'babylon') {
+            const babylonDiv = document.createElement('div');
+            babylonDiv.classList.add('babylon-canvas');
+            mediaDiv.appendChild(babylonDiv);
+            if (content.contentFunction && typeof window[content.contentFunction] === 'function') {
+                window[content.contentFunction](babylonDiv);
             }
         } else {
-            const divElement = document.createElement("div");
-            divElement.classList.add("generic-content");
-            scrollingPart.querySelector(".right-content .media").appendChild(divElement);
-
-            if (content.contentFunction && typeof window[content.contentFunction] === "function") {
-                window[content.contentFunction](divElement);
+            const genericDiv = document.createElement('div');
+            genericDiv.classList.add('generic-content');
+            mediaDiv.appendChild(genericDiv);
+            if (content.contentFunction && typeof window[content.contentFunction] === 'function') {
+                window[content.contentFunction](genericDiv);
             }
         }
+
+        // Append left and right content to scrolling part
+        rightContentDiv.appendChild(mediaDiv);
+        scrollingPart.appendChild(leftContentDiv);
+        scrollingPart.appendChild(rightContentDiv);
+
+        // Append scrolling part to content section
+        toggableSectionContent.appendChild(scrollingPart);
     });
+
+    // Append content to toggable section
+    toggableSectionDiv.appendChild(toggableSectionContent);
+
+    // Append the entire section to the page wrapper
+    sectionDiv.appendChild(toggableSectionDiv);
+    pageWrapper.appendChild(sectionDiv);
 });
+
 }
 });
