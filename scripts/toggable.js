@@ -132,7 +132,7 @@ fetch(jsonUrl)
     console.error("Error fetching JSON:", error);
 });
 
-
+// Function to process JSON data
 // Function to process JSON data
 function processJsonData(data) {
   const mainText = document.querySelector(".main-text");
@@ -241,3 +241,4 @@ function processJsonData(data) {
       pageWrapper.appendChild(sectionDiv);
   });
 }
+});
