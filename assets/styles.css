@@ -108,8 +108,11 @@ html {
     /* Ensure they take full height of the scroll-section */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+}
+
+.left-content ul {
+    margin: 10 px;
 }
 
 .right-content {
@@ -271,10 +274,10 @@ html {
 
 @media (max-width: 768px) {
     .main-section {
-        display: none!important;
+        display: block!important;
     }
     #main-section-svg {
-        display: none;
+        display: block;
     }
     
 }
