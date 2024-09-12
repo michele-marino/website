@@ -5,7 +5,7 @@
   ],
   "mainSection": {
     "svgImage": {
-      "link": "https://raw.githubusercontent.com/mastroalex/m2m/main/assets/imgs/drawing.svg"
+      "link": "assets/imgs/drawing.svg"
     },
     "Journal1": {
       "link": "https://link.springer.com/article/10.1007/s10237-024-01826-6",
