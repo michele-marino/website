@@ -115,6 +115,15 @@ html {
     margin: 10px;
 }
 
+.left-content a {
+    text-decoration: none;
+    color: #2816b3;
+}
+
+.left-content a:hover {
+    color: #a60000;
+}
+
 .right-content {
     align-items: center;
     }
