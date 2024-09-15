@@ -33,14 +33,14 @@
         {
           "text": "Building on evidence from atomistic computations, we have developed complex models of collagen molecular mechanics that account for multiple damage mechanisms. Our understanding of molecular mechanics has been integrated with in vitro test results, using collagen hybridizing peptides, to create an elasto-plastic-damage constitutive model of arterial tissue mechanics. In this model, the evolution laws of damage variables are validated based on independent experimental quantifications of molecular damage.",
 	"images": [
-            {
+            	{
           "image": "assets/imgs/journal1.png",
 	  "link": "https://link.springer.com/article/10.1007/s10237-024-01826-6"
-	},
-	}
+		},
+		{
 	  "image": "assets/imgs/journal2.png",
            "link": "https://royalsocietypublishing.org/doi/10.1098/rsif.2017.0615"
-	}
+		}
 	],
           "isImageGroup": true
         },
