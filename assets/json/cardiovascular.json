@@ -22,26 +22,26 @@
       "front": "assets/imgs/journal3.png",
       "back": "https://media.springernature.com/w316/springer-static/cover-hires/journal/10439?as=webp"
     },
-    "Text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    "Text": "We specialize in developing computational models to analyze the biomechanical behavior of cardiovascular structures. Our research focuses on modeling cardiovascular tissues as dynamic, living entities. By integrating complex mechanical descriptions of tissue behavior with the biochemical pathways that influence growth, remodeling, and active responses, we aim to provide a comprehensive understanding of cardiovascular biomechanics in health and disease. "
   },
   "sections": [
     {
       "id": "section-1",
-      "title": "Tissue damage",
-      "subtitle": "Modeling of the inflamatory response",
+      "title": "Tissue damage and Inflammation",
+      "subtitle": "Chemo-mechano-biological modelling of damage-induced inflammatory response",
       "contents": [
         {
-          "text": "In silico models that integrates nonlinear mechanics, molecular pathways, and cellular behavior to describe the inflammatory response and healing process of arterial tissues following collagen damage",
+          "text": "Building on evidence from atomistic computations, we have developed complex models of collagen molecular mechanics that account for multiple damage mechanisms. Our understanding of molecular mechanics has been integrated with in vitro test results, using collagen hybridizing peptides, to create an elasto-plastic-damage constitutive model of arterial tissue mechanics. In this model, the evolution laws of damage variables are validated based on independent experimental quantifications of molecular damage.",
           "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0010482523002767-gr1.jpg",
           "isImage": true
         },
         {
-          "text": "Several chemo-mechano-biological mechanisms are modeled and combined to simulate the entire healing cascade",
+          "text": "Over the years we have developed theoretical and computational models that integrate nonlinear mechanics, molecular pathways, and cellular behavior to describe the inflammatory response and healing process of arterial tissues following collagen damage.",
           "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0010482523002767-gr2_lrg.jpg",
           "isImage": true
         },
         {
-          "text": "Complex loading scenarios and inhomogeneous damage distributions, highlighting its utility for in silico clinical trials and precision medicin",
+          "text": "The chemo-mechano-biological model of damage-induced inflammatory responses has been implemented to follow up a coronary standard balloon angioplasty for one year. The model reproduces the temporal dynamics of vessel remodeling associated with subintimal damage. Such dynamics are bimodular, being characterized by an early tissue resorption and lumen enlargement, followed by late tissue growth and vessel constriction. ",
           "isImage": false,
           "canvasType": "babylon",
           "contentFunction": "createBabylonScene"
