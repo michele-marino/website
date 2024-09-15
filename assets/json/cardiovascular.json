@@ -30,62 +30,46 @@
       "title": "Tissue damage and Inflammation",
       "subtitle": "Chemo-mechano-biological modelling of damage-induced inflammatory response",
       "contents": [
+	{
+          "text": "Following damage mechanisms in arterial tissues, an inflammatory response is activated in order to heal damaged constituents. Biochemical pathways are triggered to react to such stimuli and maintain a functional and homeostatic behaviour. The main question in medicine is whether body response is sufficient to restore homeostasis, leads to an maladapted response, or is responsible for the development of pathologies."
+        }
+        
         {
           "text": "Building on evidence from atomistic computations, we have developed complex models of collagen molecular mechanics that account for multiple damage mechanisms. Our understanding of molecular mechanics has been integrated with in vitro test results, using collagen hybridizing peptides, to create an elasto-plastic-damage constitutive model of arterial tissue mechanics. In this model, the evolution laws of damage variables are validated based on independent experimental quantifications of molecular damage.",
-	"images": [
-            	{
           "image": "assets/imgs/journal1.png",
-	  "link": "https://link.springer.com/article/10.1007/s10237-024-01826-6"
-		},
-		{
-	  "image": "assets/imgs/journal2.png",
-           "link": "https://royalsocietypublishing.org/doi/10.1098/rsif.2017.0615"
-		}
-	],
-          "isImageGroup": true
+	  "isImage": true
         },
-        {
-          "text": "Over the years we have developed theoretical and computational models that integrate nonlinear mechanics, molecular pathways, and cellular behavior to describe the inflammatory response and healing process of arterial tissues following collagen damage.",
+	{
+          "text": "Over the years we have developed theoretical and computational models that integrate nonlinear mechanics, molecular pathways, and cellular behavior to describe the remodelling mechanisms activated by collagen damage. Models capture well-established evidence on the chemo-mechano-biological response of soft tissues.",
           "image": "https://ars.els-cdn.com/content/image/1-s2.0-S0010482523002767-gr2_lrg.jpg",
           "isImage": true
         },
         {
-          "text": "The chemo-mechano-biological model of damage-induced inflammatory responses has been implemented to follow up a coronary standard balloon angioplasty for one year. The model reproduces the temporal dynamics of vessel remodeling associated with subintimal damage. Such dynamics are bimodular, being characterized by an early tissue resorption and lumen enlargement, followed by late tissue growth and vessel constriction. ",
-          "isImage": false,
-          "canvasType": "babylon",
-          "contentFunction": "createBabylonScene"
+          "text": "The chemo-mechano-biological model of damage-induced inflammatory responses has been implemented to follow up a coronary standard balloon angioplasty for one year. The model reproduces the temporal dynamics of vessel remodeling associated with sub-intimal damage. As confirmed by clinical evidence, such dynamics are bimodular, being characterized by an early tissue resorption and lumen enlargement, followed by late tissue growth and vessel constriction. ",
+         "image": "assets/imgs/journal3.png",
+	 "isImage": true
         }
       ]
     },
     {
       "id": "section-2",
-      "title": "Atheroscleorosis",
-      "subtitle": "Fixed Subtitle 2",
+      "title": "Vascular tone regulation",
+      "subtitle": "Smooth muscle cells and oxidative stresses",
       "contents": [
         {
-          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          "image": "assets/imgs/formula.png",
+          "text": "Vascular tone regulation is a crucial aspect of cardiovascular physiology, with significant implications for overall cardiovascular health. We aim to analyse the physiological mechanisms governing smooth muscle cell contraction and relaxation as function of multiscale and multifactorial mechanisms. This activity aims to address the modelling of hypertension and of vascular remodelling induced by blood flow alterations."
+        },
+        {
+          "text": "We address the complexity of vascular tone regulation from a multiscale and multifactorial perspective. We have developed an in silico modelling framework that couples global hemodynamics, effects of local flow conditions, tissue mechanics, and biochemical pathways. The model is specialized to describe the release of Nitric Oxide from endothelial cells in response to shear stress alterations.",
+          "image": "assets/imgs/journal3.png",
           "isImage": true
-        },
-        {
-          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          "image": "assets/imgs/empty.png",
-          "isImage": false,
-          "canvasType": "chart",
-          "contentFunction": "createChart"
-        },
-        {
-          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-          "isImage": false,
-          "canvasType": "babylon",
-          "contentFunction": "createBabylonScene2"
         }
       ]
     },
     {
       "id": "section-3",
-      "title": "Vascular tone regulation",
-      "subtitle": " Chemo-mechano-biological pathways",
+      "title": "Carotid atherosclerosis",
+      "subtitle": "Computational models as diagnostic and prognostic tools in clinics",
       "contents": [
         {
           "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
