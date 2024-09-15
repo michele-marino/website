@@ -32,8 +32,7 @@
       "contents": [
 	{
           "text": "Following damage mechanisms in arterial tissues, an inflammatory response is activated in order to heal damaged constituents. Biochemical pathways are triggered to react to such stimuli and maintain a functional and homeostatic behaviour. The main question in medicine is whether body response is sufficient to restore homeostasis, leads to an maladapted response, or is responsible for the development of pathologies."
-        }
-        
+        }, 
         {
           "text": "Building on evidence from atomistic computations, we have developed complex models of collagen molecular mechanics that account for multiple damage mechanisms. Our understanding of molecular mechanics has been integrated with in vitro test results, using collagen hybridizing peptides, to create an elasto-plastic-damage constitutive model of arterial tissue mechanics. In this model, the evolution laws of damage variables are validated based on independent experimental quantifications of molecular damage.",
           "image": "assets/imgs/journal1.png",
